@@ -1,5 +1,6 @@
 import './App.css';
 import Logo from './components/Logo';
+import Paragraph from './components/Paragraph';
 function App() {
   return (
     //이러한 부분을 JSX라고 한다.
@@ -9,9 +10,12 @@ function App() {
         <Logo size={300} />
         <Logo />
         <Logo />
-        <p>
+        <Paragraph>
           Edit <code>src/App.js</code> and save to reload.
-        </p>
+        </Paragraph>
+        <Paragraph size={14} color="blue">
+          I'm blue data dee dada!
+        </Paragraph>
         <a
           className="App-link"
           href="https://reactjs.org"
