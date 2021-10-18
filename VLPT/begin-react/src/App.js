@@ -1,6 +1,7 @@
 import React from 'react'
 import Hello from './Hello'
 import Wrapper from './Wrapper'
+import Counter from './Counter'
 import './App.css'
 
 function App() {
@@ -25,6 +26,8 @@ function App() {
         <Hello name="react" color="red" isSpecial></Hello>
         <Hello color="pink"></Hello>
       </Wrapper>
+
+      <Counter />
     </>
   )
 }
