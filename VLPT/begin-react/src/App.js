@@ -20,8 +20,9 @@ function App() {
 
       <div style={style}>{name}</div>
       <div className="gray-box"></div>
+
       <Wrapper>
-        <Hello name="react" color="red"></Hello>
+        <Hello name="react" color="red" isSpecial></Hello>
         <Hello color="pink"></Hello>
       </Wrapper>
     </>
