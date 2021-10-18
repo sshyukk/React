@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Hello from './Hello'
 import Wrapper from './Wrapper'
 import Counter from './Counter'
@@ -14,7 +14,27 @@ function App() {
     fontSize: 24,
     padding: '1rem'
   }
-
+  const users = [
+    {
+        id: 1,
+        username: 'velopert',
+        email: 'aaa'
+    },
+    {
+        id: 2,
+        username: 'sshyukk',
+        email: 'bbb'
+    },
+    {
+        id: 3,
+        username: 'sanghyuk',
+        email: 'ccc'
+    },
+  ]
+  const nextId = useRef(4)
+  const onCreate = () => {
+    nextId.current += 1
+  }
   return (
     <div>
       <Hello name="react" color="red"/>
@@ -31,7 +51,7 @@ function App() {
 
       <Counter />
       <InputSample />
-      <UserList />
+      <UserList users={users} />
 
     </div>
   )
