@@ -1,5 +1,6 @@
 import React from 'react'
 import Hello from './Hello'
+import Wrapper from './Wrapper'
 import './App.css'
 
 function App() {
@@ -13,11 +14,16 @@ function App() {
 
   return (
     <>
-      <Hello />
-      <Hello />
-      <Hello />
+      <Hello name="react" color="red"/>
+      <Hello name="vue" color="green"/>
+      <Hello color="blue" />
+
       <div style={style}>{name}</div>
       <div className="gray-box"></div>
+      <Wrapper>
+        <Hello name="react" color="red"></Hello>
+        <Hello color="pink"></Hello>
+      </Wrapper>
     </>
   )
 }
